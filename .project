@@ -9,3 +9,189 @@
 	<natures>
 	</natures>
 </projectDescription>
+
+package com.promineotech;
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		//1. 
+		 int[] ages = {3, 9, 23, 64, 2, 8, 28, 93}; {
+		
+		// 1 a.  
+		int resultA = ages[ages.length - 1] - ages[0];
+		System.out.println("Result of Subtraction (ages): " + resultA);
+		
+		// 1 b.
+		int[] ages2 = new int[9];
+		ages2[0] = 3;
+		ages2[1] = 9;
+	    ages2[2] = 23;
+		ages2[3] = 64;
+		ages2[4] = 2;
+		ages2[5] = 8;
+		ages2[6] = 28;
+		ages2[7] = 93;
+		ages2[8] = 98;
+		
+		int resultB = ages2[ages2.length - 1] - ages2[0];
+		System.out.println("Result of subtraction (ages2): " + resultB);
+		
+		// 1 c.
+		for (int age : ages) {
+			resultB += age;
+			System.out.println("Average age: " + resultB);
+			
+			}
+		
+		// 2.
+		String[] names = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
+		
+		// 2 a.
+		String[] name = new String[6];
+		for (int i =0; i< name.length; i++); {
+			int i = 0;
+			System.out.println(name[i]);
+			
+		
+		// 2 b.
+			StringBuilder concatenatedNames = new StringBuilder();
+			
+			for (String name1 : names) {
+				
+			concatenatedNames.append(name1).append(" ");
+			}
+			
+			System.out.println(concatenatedNames.toString().trim());
+		
+		}
+		
+		      int[] numbers = {5, 10, 15, 20, 25};
+		
+		 // 3 How do you access the last element of any array?
+		
+		    
+			
+		
+		 int lastElement = numbers [numbers.length-1];
+		    	
+		   
+		
+		// 4 How do you access the first element of any array?
+		    
+		       int firstElement = numbers[0];   
+		
+		
+		// 5.
+		int[] nameLengths = new int[names.length];
+		for (int i = 0; i < name.length; i++) {
+			nameLengths[i] = names[i].length();
+		}
+		
+		
+		// 6.
+		int sumOfLength = 0;
+		for (int length : nameLengths) {
+			sumOfLength += length;
+			
+		}
+		System.out.println("Sum of name lengths: " + sumOfLength); 
+		// 8.
+			String firstName = "Sally";
+			String lastName = "Smith";
+			
+			System.out.println(createFullName(firstName, lastName));
+	         boolean isHot = true;
+	   		
+	   		double moneyInPocket = 10.50;
+	   		System.out.println(willBuyDrink(isHot, moneyInPocket));
+	}
+		// 7.
+		
+		      String tripleHello = multiplyString("Hello", 3);
+		      System.out.println(tripleHello);
+		}
+	              
+		public static String multiplyString(String str, int num) {
+			String result = "";
+			for(int i = 0; i < num; i++) {
+				result += str;
+				
+			}
+			
+			return result;
+
+		
+		}
+
+		
+		
+		
+		
+		   public static String createFullName(String x, String y) {
+	    	 String fullName = x + " " + y;
+	    	 return fullName;
+		
+	     }
+	     
+	     
+	    
+		
+
+		// 9.
+	    public static boolean sumArray(int[] numbers) {
+	    	int sum = 0;
+	    for (int number : numbers) {
+	    	sum += number;
+	    }
+	     return sum < 100;
+	     
+	    }
+	    
+	    
+	    // 10.
+	    public static double calculateAverage(double[] numbers) {
+	    	 double sum = 0;
+	    	
+	    	 for (double number : numbers) {
+	    	
+	    		 sum += number;
+	    		 
+	    	 }
+	    	 
+	    	 return sum / numbers.length;
+	    	 
+	    }
+	    
+	    //11.
+	  public static double calculateAverage(double[] arr1, double[] arr2)  {
+	    double sum = 0;
+	    for (double num : arr1) {
+	    	sum += num;
+	    	}
+	    	
+	    	return sum / arr1.length;
+	    }
+	    		
+	    //12.
+	   	
+	   	
+	   
+	   	public static boolean willBuyDrink(boolean isHotOutside, double moneyInPocket) {
+	    	  
+	   		
+	   		
+	   		return isHotOutside && moneyInPocket > 10.50;
+	    	    
+	    	    
+	   		
+	    		}
+	    	
+	
+
+
+	}
+
